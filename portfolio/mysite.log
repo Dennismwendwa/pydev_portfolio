@@ -1,0 +1,56 @@
+[23/May/2023 06:44:46] ERROR [django.request:241] Internal Server Error: /portfolio-details
+Traceback (most recent call last):
+  File "/home/dennis/projects/pydev_portfolio/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/dennis/projects/pydev_portfolio/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dennis/projects/pydev_portfolio/portfolio/projects/views.py", line 14, in portfolio_details
+    return render(request, "projets/portfolio-details.html", {})
+  File "/home/dennis/projects/pydev_portfolio/venv/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/dennis/projects/pydev_portfolio/venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/dennis/projects/pydev_portfolio/venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: projets/portfolio-details.html
+[23/May/2023 06:44:46] ERROR [django.server:212] "GET /portfolio-details HTTP/1.1" 500 81721
+[23/May/2023 11:40:49] ERROR [django.request:241] Internal Server Error: /contact
+Traceback (most recent call last):
+  File "/home/dennis/projects/pydev_portfolio/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/dennis/projects/pydev_portfolio/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dennis/projects/pydev_portfolio/portfolio/projects/views.py", line 27, in contact
+    email = form.cleaned_data["emil"]
+KeyError: 'emil'
+[23/May/2023 11:40:49] ERROR [django.server:212] "POST /contact HTTP/1.1" 500 69036
+[23/May/2023 12:15:59] ERROR [django.request:241] Internal Server Error: /contact
+Traceback (most recent call last):
+  File "/home/dennis/projects/pydev_portfolio/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/dennis/projects/pydev_portfolio/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dennis/projects/pydev_portfolio/portfolio/projects/views.py", line 42, in contact
+    return redirect("projects/index.html")
+NameError: name 'redirect' is not defined
+[23/May/2023 12:15:59] ERROR [django.server:212] "POST /contact HTTP/1.1" 500 69730
+[23/May/2023 13:26:59] ERROR [django.request:241] Internal Server Error: /contact
+Traceback (most recent call last):
+  File "/home/dennis/projects/pydev_portfolio/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/dennis/projects/pydev_portfolio/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dennis/projects/pydev_portfolio/portfolio/projects/views.py", line 44, in contact
+    return redirct("projects") + '#contact-form'
+NameError: name 'redirct' is not defined
+[23/May/2023 13:26:59] ERROR [django.server:212] "POST /contact HTTP/1.1" 500 69867
+[23/May/2023 13:27:39] ERROR [django.request:241] Internal Server Error: /contact
+Traceback (most recent call last):
+  File "/home/dennis/projects/pydev_portfolio/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/dennis/projects/pydev_portfolio/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dennis/projects/pydev_portfolio/portfolio/projects/views.py", line 44, in contact
+    return redirect("projects") + '#contact-form'
+TypeError: unsupported operand type(s) for +: 'HttpResponseRedirect' and 'str'
+[23/May/2023 13:27:39] ERROR [django.server:212] "POST /contact HTTP/1.1" 500 70061

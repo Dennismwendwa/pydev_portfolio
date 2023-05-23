@@ -1,0 +1,819 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pydev - Software</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,
+  300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,
+  600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,
+  700i&subset=cyrillic" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
+    <h1>Hi, I'm Dennis!</h1>
+    <h2>I am a Software Developer</h2>
+    <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down">
+    </i></a>
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">Pydev</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" 
+	class="img-fluid"></a>-->
+      </div>
+      
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+	  <!--
+          <li class="dropdown"><a href="#"><span>Drop Down</span> 
+	  <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> 
+	      <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+  <section>
+    {% for message in messages %}
+    <div class="sent-message"><h3>{{message}}</h3></div>^M
+     {% endfor %}
+
+  </section>
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center 
+	  justify-content-lg-start"></div>
+          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3>Software for world</h3>
+              <p>
+                Hello, I'm <strong>Dennis Mwendwa,</strong> an accomplished software
+		developer specializing
+		in creating websites, applications, and more. With a strong focus on backend
+		development, I excel in Python and frameworks like Django and Flask.
+		I possess extensive experience working with databases, particulary PostgreSQL,
+		 while also being adaptable to other database systems.
+              </p><br>
+	      <p>
+	      In addition to my backend skills, I am proficient in front-end development with 
+	      expertise in CSS, HTML, and Vue.js. By leveraging these technologies, I create 
+	      visually appealing and responsive user interfaces that enhance the overall user
+	      experience.
+	      </p><br>
+	      <p>
+	      I am committed to delivering high-quality solutions by commbining my technical 
+	      skills with a keen eye for detail and a passion for innovation. I thrive on
+	      collaborating closely with clients and stakeholders to understand their unique 
+	      requirements, translating them into efficient and scalable applications.
+	      </p><br>
+	      <p>
+	      Moreover, I am adaptable and constantly stay up-to-date with emerging trends and 
+	      technologies in the industry. This enables me to provide modern and cutting-edge 
+	      solutions to meet the evolving needs of businesses.
+	      </p><br>
+	      <p>
+	      If you are seeking a versatile and dedicated software developer to transform your
+	       ideas into reality, I would be thrilled to work with you. Let's collaborate 
+	       and create impactful digital experience together.
+	      </p>
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span  class=""></span>
+                    <p><strong>Happy Clients</strong> Here are some of clients</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="10" 
+		    data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Projects</strong> Here are some of the previours clients projects.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="3" 
+		    data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Years of experience</strong> 3 years working with
+		    different clients.</p>
+                  </div>
+                </div>
+
+                <!--<div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="15" 
+		    data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Awards</strong> rerum asperiores dolor alias quo 
+		    reprehenderit eum et nemo pad der</p>
+                  </div>
+                </div>
+		-->
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>
+	  "Proficient in Python, Django, and Flask for backend development. Skilled 
+	  in PostgresSQL and adaptable to other databases. Strong in CSS, HTML, and 
+	  Vue.js for frontend development. Solid problem-solving and collaboration abilities.
+	  Up-to-date with indursty trends. Expertise in creating dynamic websites and
+	   innovative applications."
+	  </p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">HTML</span>
+              
+                
+		
+          
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS </span>
+              
+                
+		
+              
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript </span>
+              
+                
+		
+              
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Python </span>
+              
+                
+		
+              
+            </div>
+
+            <div class="progress">
+              <span class="skill">Django</span>
+             
+            </div>
+
+            <div class="progress">
+              <span class="skill">Flask </span>
+             
+              
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Experienced software developer with expertise in both frontend and backend technologies. 
+	  Skilled in Python, JavaScript, and HTML/CSS, with proficiency in frameworks like Django and Flask. 
+	  Strong in creating visually appealing user interfaces using Vue.js. Knowledgeable in 
+	  database management and integration. Detail-oriented and committed to delivering high-quality 
+	  results. Adaptable and continuously staying up-to-date with industry trends. Ready to 
+	  tackle new challenges and create impactful digital experiences.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Dennis Mwendwa</h4>
+              <p><em>Results-driven software developer with 3+ years of experience in creating innovative 
+	      websites and applications. Proficient in a wide range of programming languages and frameworks, 
+	      including Python, Django, Flask, HTML, CSS, and JavaScript.</em></p>
+              <p>
+              <ul>
+                <!--<li></li>
+-->
+                <li>+254712930893</li>
+                <li>dennissoftware@gmail.com</li>
+              </ul>
+              </p>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Degree in Software Engeneering</h4>
+              <h5>2022 - present</h5>
+              <!--<p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+-->
+              <p>
+	      Pursuing a degree in Software Engineering, currently in the final year of studies.
+	      Leveraging academic coursework and hands-on projects to gain a deep understanding of
+	      software development principles, algorithms, and data structures. Actively applying
+	      theoretical knowledge to practical scenarios, demonstrating a strong commitment to
+	      continuous learning and professional growth. Eager to contribute emerging skills and
+	      fresh perspectives to real-world software development challenges
+	      </p>
+            </div>
+            <div class="resume-item">
+           <h4>Python Data Structure</h4>
+              <h5>2021 - 2022</h5>
+              <p><em>University of Michigan</em></p>
+              <p>
+	      I have extensively studied Python data structures, developing a strong understanding
+	      of lists, dictionaries, tuples, sets, and more. This knowledge enables me 
+	      to efficiently organize and manipulate data, optimizing algorithms and 
+	      delivering streamlined software solutions. I stay updated on the latest
+	      advancements in Python data structures to ensure my skills are always up
+	      to date and ready to be applied to create efficient and scalable solutions.
+	      </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Website Developer</h4>
+              <h5>2021 - Present</h5>
+             <!-- <p><em></em></p>
+-->
+              <p>
+              <ul>
+                <li>Developed and deployed responsive and visually appealing websites
+		for a diverse range of individual clients, ensuring a seamless user
+		experience across multiple devices and browsers</li>
+                <li>Created and implemented interactive features and functionalities,
+		utilizing HTML, CSS, and JavaScript, to enhance user engagement and
+		improve overall website performance </li>
+                <li>Worked closely with individual clients throughout the development 
+		process, providing regular updates, conducting thorough testing, and 
+		incorporating their feedback to ensure the final product meets their
+		expectations and objectives</li>
+                <li>Demonstrated expertise in project management, successfully delivering 
+		projects within agreed timelines and budgets, while maintaining effective 
+		communication with clients to provide regular updates and gather feedback 
+		for iterative improvements.</li>
+		<li>
+		Implemented efficient back-end solutions using frameworks like Django and
+		Flask, ensuring seamless data flow and optimal system performance 
+		for client projects.
+		</li>
+              </ul>
+              </p>
+            </div>
+           <!-- <div class="resume-item">
+              <h4>Graphic design specialist</h4>
+              <h5>2017 - 2018</h5>
+              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <p>
+              <ul>
+                <li>Developed numerous marketing programs (logos, brochures,
+				infographics, presentations, and advertisements).</li>
+                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                <li>Recommended and consulted with clients on the most appropriate
+		graphic design</li>
+                <li>Created 4+ design presentations and proposals a month for clients
+		and account managers</li>
+              </ul>
+              </p>
+            </div>
+	    -->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Discover the comprehensive range of services I offer as a software developer. 
+	  With a passion for creating exceptional digital experiences, I provide tailored solutions 
+	  to meet your unique needs. From website development and database management and system 
+	  optimization, my services are designed to elevate your business. Take a look at the list below
+	   to explore the specific service I provide.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Website Development</a></h4>
+              <p class="description">Creating dynamic and responsive websites tailored to 
+	      your specific reuirements, using modern technologies and frameworks.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Backend Development</a></h4>
+              <p class="description">Building robust and scarable backend systems using frameworks 
+	      like Django and Flask, ensuring seamless data flow and optimal performance.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">E-commerce Solutions</a></h4>
+              <p class="description">Developing customized e-commerce platforms with features like 
+	      shopping carts, secure payment gateways, and inventory management systems.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Maintenance and Support</a></h4>
+              <p class="description">Providing ongoing maintenance, updates, and support services to ensure
+	       the smooth operation of your application.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>
+	             Welcome to my portfolio! Here, you'll find a collection of my recent projects
+	              that showcase my skills and expertise as a software developer. From 
+	                captivating websites to innovative applications, each project represents
+	                my dedication to delivering high-quality solutions. I take pride in commbining
+	                 cutting-edge technologies, theoghtful design, and efficient coding
+	              practices to create impactful digital experiences. Please explore my portfolio 
+	         below to get a glimpse of my work.
+	        </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+             <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+ 
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/afritours.jpg' %}" 
+	             class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" 
+	              	data-gallery="portfolioGallery" class="portfolio-lightbox" 
+	              	title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="" title="More Details">
+	            	<i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+	
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-2.jpg' %}"
+	              class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" 
+	            	data-gallery="portfolioGallery" class="portfolio-lightbox" 
+		            title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio_details' %}" title="More Details">
+	            	<i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-3.jpg' %}"
+	              class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" 
+	            	data-gallery="portfolioGallery" 
+	            	class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio_details' %}" title="More Details"><i class="bx bx-link">
+		           </i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" 
+	             class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" 
+		             data-gallery="portfolioGallery" class="portfolio-lightbox" 
+		             title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio_details' %}" title="More Details">
+	              	<i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" 
+	             class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" 
+		            data-gallery="portfolioGallery" class="portfolio-lightbox" 
+		            title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio_details' %}" title="More Details">
+		           <i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-6.jpg' %}"
+	             class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-6.jpg' %}" 
+	              	data-gallery="portfolioGallery" class="portfolio-lightbox" 
+	              	title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio_details' %}" title="More Details">
+	             	<i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-7.jpg' %}" 
+	               class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-7.jpg' %}" 
+		            data-gallery="portfolioGallery" class="portfolio-lightbox" 
+		            title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio_details' %}" title="More Details">
+		            <i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-8.jpg' %}"
+	            class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-8.jpg' %}" 
+		            data-gallery="portfolioGallery" class="portfolio-lightbox" 
+	             	title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'portfolio_details' %}" title="More Details">
+		            <i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+ 
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/afritours.jpg' %}"
+	             class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+              </div>
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/afritours.jpg' %}" 
+		            data-gallery="portfolioGallery"
+		             class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="https://afritour.up.railway.app/" title="More Details">
+		           <i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>
+	  Discover what clients have to say about their experince working with me. Read throught
+	  these testimonials to get a sense of the quality and satisfaction that my services
+	  bring. I am proud to have earned their trust and delivered exceptional results.
+	  Take a moment to browse the testimonials below and see the impact I can make on 
+	  your project.
+	  </p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class=""> <!--to make it slide add add class swiper-slide-->
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Working with Dennis Mwendwa has been an absolute pleasure. Their expertise
+		                           in software development, particularly in Python and Django, was instrumental
+		                           in bringing our project to life. They demostrated exceptional 
+		                   problem-solving skills and keen eye for detail throughtout the 
+		                   development process. The results was a seamless and user-friendly application
+		                    that exceeded our expectations. Dennis Mwendwa consistently communicated
+		                             with us, keeping us informed of progress and delivered on time. 
+		                      Their professionalism and commitment excellence truly made a difference. 
+		                 We highly recommend Dennis Mwendwa for any software development needs
+		                 and look forward to future collaborations.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/pr_avatar.png' %}"
+	              	class="testimonial-img" alt="">
+                <h3>Morcus Gedion</h3>
+                <!--<h4>Ceo &amp;</h4>
+              </div>
+            </div>
+          
+	
+           
+	
+
+	
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam
+		                tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum
+		                    fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" 
+                   		class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div>--><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>
+	  Ready to bring your ideas to life? I'm here to help! Whether you have a website 
+	  that needs revamping, an app idea that needs development, or any other software-related
+	  project, let's discuss how we can turn your vision into reality. I'm just a call or 
+	  email away, ready to listen to your unique requirements and provide tailored solutions
+	  that meet your needs. Don't hesitate to reach out and share your project with me.
+	   Let's collaborate and create something amazing together!
+	  </p>
+        </div>
+
+        <div class="row">
+
+         <!-- <div class="col-lg-4 col-md-4">
+            <div class="contact-about">
+              <h3>Lonely</h3>
+              <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis
+	      eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo.
+	      Amet volutpat consequat mauris nunc congue.</p>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+-->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+           <!--   <div class="d-flex align-items-center">
+                <i class="bi bi-geo-alt"></i>
+                <p>A108 Adam Street<br>New York, NY 535022</p>
+              </div>
+-->
+
+              <div class="d-flex align-items-center mt-4">
+                <i class="bi bi-envelope"></i>
+                <p>dennissoftware@gmail.com</p>
+              </div>
+
+              <div class="d-flex align-items-center mt-4">
+                <i class="bi bi-phone"></i>
+                <p>+254 712930893</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <form action="{% url 'contact' %}" method="post" id="" role="form" class="">
+		{% csrf_token %}
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" 
+		id="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group mt-3">
+                <input type="email" class="form-control" name="email" 
+		id="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" 
+		id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" 
+		placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+		{% for message in messages %}
+                <div class="sent-message">{{message}}</div>
+		{% endfor %}
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Pydev @ 2023</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="">Pydev</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+  <i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{% static 'assets/js/contact.js' %}"></script>
+
+</body>
+
+</html>
