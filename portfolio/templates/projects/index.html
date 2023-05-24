@@ -50,7 +50,7 @@
         <h1><a href="index.html">Pydev</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" 
-	class="img-fluid"></a>-->
+	       class="img-fluid"></a>-->
       </div>
       
 
@@ -61,26 +61,7 @@
           <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-	  <!--
-          <li class="dropdown"><a href="#"><span>Drop Down</span> 
-	  <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> 
-	      <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
+	
 
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -201,41 +182,29 @@
 
         <div class="row skills-content">
 
-          <div class="col-lg-6">
+          <div class="col-lg-4">
 
             <div class="progress">
               <span class="skill">HTML</span>
-              
-                
-		
           
             </div>
 
             <div class="progress">
               <span class="skill">CSS </span>
-              
-                
-		
-              
+            
             </div>
 
             <div class="progress">
               <span class="skill">JavaScript </span>
               
-                
-		
-              
             </div>
 
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-4">
 
             <div class="progress">
               <span class="skill">Python </span>
-              
-                
-		
               
             </div>
 
@@ -247,7 +216,25 @@
             <div class="progress">
               <span class="skill">Flask </span>
              
+            </div>
+
+          </div>
+
+          <div class="col-lg-4">
+
+            <div class="progress">
+              <span class="skill">PostgreSQL </span>
               
+            </div>
+
+            <div class="progress">
+              <span class="skill"></span>
+             
+            </div>
+
+            <div class="progress">
+              <span class="skill"></span>
+             
             </div>
 
           </div>
@@ -391,7 +378,7 @@
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4 class="title"><a href="">Website Development</a></h4>
               <p class="description">Creating dynamic and responsive websites tailored to 
-	      your specific reuirements, using modern technologies and frameworks.</p>
+	             your specific reuirements, using modern technologies and frameworks.</p>
             </div>
           </div>
 
@@ -400,7 +387,7 @@
               <div class="icon"><i class="bx bx-file"></i></div>
               <h4 class="title"><a href="">Backend Development</a></h4>
               <p class="description">Building robust and scarable backend systems using frameworks 
-	      like Django and Flask, ensuring seamless data flow and optimal performance.</p>
+	            like Django and Flask, ensuring seamless data flow and optimal performance.</p>
             </div>
           </div>
 
@@ -428,7 +415,7 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+    <section id="portfolio" class="services section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -445,179 +432,25 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-             <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
- 
-            </ul>
-          </div>
-        </div>
 
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/afritours.jpg' %}" 
-	             class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" 
-	              	data-gallery="portfolioGallery" class="portfolio-lightbox" 
-	              	title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="" title="More Details">
-	            	<i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-	
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-2.jpg' %}"
-	              class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" 
-	            	data-gallery="portfolioGallery" class="portfolio-lightbox" 
-		            title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="{% url 'portfolio_details' %}" title="More Details">
-	            	<i class="bx bx-link"></i></a>
-              </div>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              
+              <h4 class="title"><a href="">Website Development</a></h4>
+              <p class="description">Creating dynamic and responsive websites tailored to 
+	             your specific reuirements, using modern technologies and frameworks.</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-3.jpg' %}"
-	              class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" 
-	            	data-gallery="portfolioGallery" 
-	            	class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="{% url 'portfolio_details' %}" title="More Details"><i class="bx bx-link">
-		           </i></a>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" 
-	             class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" 
-		             data-gallery="portfolioGallery" class="portfolio-lightbox" 
-		             title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="{% url 'portfolio_details' %}" title="More Details">
-	              	<i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" 
-	             class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" 
-		            data-gallery="portfolioGallery" class="portfolio-lightbox" 
-		            title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="{% url 'portfolio_details' %}" title="More Details">
-		           <i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-6.jpg' %}"
-	             class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/img/portfolio/portfolio-6.jpg' %}" 
-	              	data-gallery="portfolioGallery" class="portfolio-lightbox" 
-	              	title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="{% url 'portfolio_details' %}" title="More Details">
-	             	<i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-7.jpg' %}" 
-	               class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/img/portfolio/portfolio-7.jpg' %}" 
-		            data-gallery="portfolioGallery" class="portfolio-lightbox" 
-		            title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="{% url 'portfolio_details' %}" title="More Details">
-		            <i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/portfolio-8.jpg' %}"
-	            class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/img/portfolio/portfolio-8.jpg' %}" 
-		            data-gallery="portfolioGallery" class="portfolio-lightbox" 
-	             	title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="{% url 'portfolio_details' %}" title="More Details">
-		            <i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
- 
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/portfolio/afritours.jpg' %}"
-	             class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="{% static 'assets/img/portfolio/afritours.jpg' %}" 
-		            data-gallery="portfolioGallery"
-		             class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="https://afritour.up.railway.app/" title="More Details">
-		           <i class="bx bx-link"></i></a>
-              </div>
+           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+             <h4 class="title"><a href="https://afritour.up.railway.app/">Web App</a></h4>
+              <h4 class="title"><a href="https://afritour.up.railway.app/">Tourism Website</a></h4>
+              <p class="description">Made using Python and Django for backend. PostgreSQL for database and JavaScript
+                , CSS and HTML for frontend.
+              </p>
             </div>
           </div>
 
@@ -739,7 +572,7 @@
 
               <div class="d-flex align-items-center mt-4">
                 <i class="bi bi-envelope"></i>
-                <p>dennissoftware@gmail.com</p>
+                <p>dennissoftware3@gmail.com</p>
               </div>
 
               <div class="d-flex align-items-center mt-4">
